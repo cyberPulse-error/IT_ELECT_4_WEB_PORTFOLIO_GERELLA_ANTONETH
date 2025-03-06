@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- icons link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script> <!---Design to pop out-->
+  <!-- Daisy Ui Links -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Home Page</title>  
+</head>
+<body style="font-family: Roboto, sans-serif;" class="bg-[#001F3F] text-[#FFFFFF]">
+
+  <!-- Navbar Section -->
+  <header class="bg-[#001F3F] max-w-screen-xl mx-auto px-4 py-6">
+    <nav class="">
+      <ul style="font-family: 'Roboto Mono', monospace;" class="flex justify-around font-semibold">
+        <li><a href="home.html" class="transition-all hover:text-[#FFD700]">Home</a></li>
+        <li><a href="about.html" class="transition-all hover:text-[#FFD700]">About</a></li>
+        <li><a href="cert.html" class="transition-all hover:text-[#FFD700]">Certificates</a></li>
+        <li><a href="#contact" class="transition-all hover:text-[#FFD700]">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="flex flex-col-reverse sm:flex-row sm:justify-between lg:min-h-screen bg-[#001F3F] px-8 sm:px-16 py-4 max-w-screen-xl mx-auto">
+    <!-- left side -->
+    <div class="sm:w-3/5">
+      <p style="font-family: 'Roboto Mono', monospace;" class="text-[#FFD700] font-semibold">Hi, my name is</p>
+      <!-- <h2 class="text-4xl lg:text-5xl xl:text-6xl font-bold text-[#FFFFFF] mt-3 lg:mt-7 ">Antoneth</h2> -->
+      <h2 class="text-4xl lg:text-5xl xl:text-6xl font-bold text-[#FFFFFF] mt-3 lg:mt-7 flex space-x-1">
+        <span class="inline-block animate-wave" style="animation-delay: 0s;">A</span>
+        <span class="inline-block animate-wave" style="animation-delay: 0.1s;">n</span>
+        <span class="inline-block animate-wave" style="animation-delay: 0.2s;">t</span>
+        <span class="inline-block animate-wave" style="animation-delay: 0.3s;">o</span>
+        <span class="inline-block animate-wave" style="animation-delay: 0.4s;">n</span>
+        <span class="inline-block animate-wave" style="animation-delay: 0.5s;">e</span>
+        <span class="inline-block animate-wave" style="animation-delay: 0.6s;">t</span>
+        <span class="inline-block animate-wave" style="animation-delay: 0.7s;">h</span>
+      </h2>
+      <h2 class="text-3xl lg:text-4xl xl:text-5xl font-bold text-[#FFD700] mt-3 lg:mt-7">BSIT STUDENT</h2>
+      <p class="mt-6 lg:mt-10 max-w-md text-[#FFFFFF]">
+        Currently taking up a Bachelor Degree at Bataan Heroes College.
+        I am focused on learning JavaScript Full Stack Web Development. <br>
+        I love to learn different languages and build beautiful web and system. <br>
+        <span style="font-family: 'Roboto Mono', monospace;" class="font-bold text-[#FFD700]">Open for Work & Collaboration.</span>
+      </p>
+      <div class="mt-12">
+       
+        <a href="#skills" style="font-family: 'Roboto Mono', monospace;"
+          class="px-6 py-3 text-[#FFD700] border-2 border-[#FFD700] font-bold transition-all hover:bg-[#FFD70032] rounded-full ">Check out
+          My Skills!
+        
+        </a>
+      </div>
+      <!-- social Links -->
+      <div class="mt-12">
+        <ul class="flex gap-4">
+          <li class="mr-2 flex justify-center items-center">
+            <a href="https://github.com/cyberPulse-error" target="_blank" class="w-[35px] h-[35px]">
+              <ion-icon name="logo-github" class="w-[35px] h-[35px] transition-all hover:text-[#FFD700]"></ion-icon>
+            </a>
+          </li>
+          <li class="mr-2 flex justify-center items-center">
+            <a href="https://www.instagram.com/gerellaantoneth/?hl=en" target="_blank" class="w-[35px] h-[35px]">
+              <ion-icon name="logo-instagram" class="w-[35px] h-[35px] transition-all hover:text-[#FFD700]"></ion-icon>
+            </a>
+          </li>
+          <li class="mr-2 flex justify-center items-center">
+            <a href="mailto: antonethgerella@gmail.com" target="_blank" class="w-[35px] h-[35px]">
+              <ion-icon name="mail" class="w-[35px] h-[35px] transition-all hover:text-[#FFD700]"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- right side -->
+    <div class="hidden sm:block sm:w-2/5 flex justify-center items-center">
+      <img src="img/gerella.png" alt="hero-img" class="w-[80%] lg:w-[90%] xl:w-full max-w-[500px]  shadow-lg transition-transform transform hover:scale-110 hover:shadow-xl duration-300">
+      <!-- <img src="img/gerella.png" alt="hero-img" class="w-full h-auto object-cover"> -->
+    </div>
+  </section>
+</body>
+</html>
