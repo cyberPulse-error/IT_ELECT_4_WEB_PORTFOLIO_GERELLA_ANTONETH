@@ -16,27 +16,83 @@
   <!-- Daisy Ui Links -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <title>Home Page</title>  
+  <title>Certificates</title>  
 </head>
 <body style="font-family: Roboto, sans-serif;" class="bg-[#001F3F] text-[#FFFFFF]">
 
   <!-- Navbar Section -->
-  <header class="bg-[#001F3F] max-w-screen-xl mx-auto px-4 py-6">
-    <nav class="flex items-center justify-between">
+  <header class="bg-gradient-to-r from-[#001F3F] to-[#003366] shadow-lg w-full px-8 py-6">    <nav class="flex items-center justify-between">
       <!--logo-->
-      <a href="/" class="text-white font-bold text-lg flex items-center gap-3">
-        <img src="img/Logo.png" alt="Logo" class="w-12 h-12 object-contain" />
+      <a href="/" class="text-white font-bold text-lg flex items-flex gap-10 ml-20">
+        <img src="img/Logo.png" alt="Logo" class="w-55 h-12 object-contain" />
       </a>
-      <ul style="font-family: 'Roboto Mono', monospace;" class="flex space-x-8 font-semibold">
+      <ul style="font-family: 'Roboto Mono', monospace;" class="flex space-x-10 font-semibold">
         <li><a href="home.html" class="transition-all hover:text-[#FFD700]">Home</a></li>
         <li><a href="about.html" class="transition-all hover:text-[#FFD700]">About</a></li>
         <li><a href="cert.html" class="transition-all hover:text-[#FFD700]">Certificates</a></li>
-        <li><a href="#contact" class="transition-all hover:text-[#FFD700]">Contact</a></li>
+        <li><a href="contact.html" class="transition-all hover:text-[#FFD700]">Contact</a></li>
       </ul>
     </nav>
   </header>
 
 
+
+    <!-- Header -->
+    <header class="bg-[#FFD700] text-[#001F3F] py-5 text-center font-bold text-3xl">
+        My Certificates & Diplomas
+    </header>
+
+    <!-- Certificate Section -->
+    <section class="py-12 px-6 max-w-5xl mx-auto">
+        <h2 class="text-2xl font-semibold text-center text-[#FFD700]">📜 Achievements & Recognitions</h2>
+        <p class="text-center text-gray-300 mt-2">Here are some of my certifications and diplomas.</p>
+
+        <!-- Certificate Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
+            
+            <!-- Certificate 1 -->
+            <div class="bg-gray-800 rounded-lg p-4 shadow-lg">
+                <img src="img/VATP Cert.jpg" alt="Certificate 1" class="w-full rounded-md cursor-pointer hover:scale-105 transition-all" onclick="openModal('img/cert1.jpg')">
+                <h3 class="text-lg font-bold text-white mt-3">Certificate in Graphic Design</h3>
+                <p class="text-gray-400 text-sm">VATP  - 2023</p>
+            </div>
+
+            <!-- Certificate 2 -->
+            <div class="bg-gray-800 rounded-lg p-4 shadow-lg">
+                <img src="img/VATP Cert.jpg" alt="Certificate 2" class="w-full rounded-md cursor-pointer hover:scale-105 transition-all" onclick="openModal('img/cert2.jpg')">
+                <h3 class="text-lg font-bold text-white mt-3">Diploma in Computer Science</h3>
+                <p class="text-gray-400 text-sm">University of Marupok - 2022</p>
+            </div>
+
+            <!-- Certificate 3 -->
+            <div class="bg-gray-800 rounded-lg p-4 shadow-lg">
+                <img src="img/VATP Cert.jpg" alt="Certificate 3" class="w-full rounded-md cursor-pointer hover:scale-105 transition-all" onclick="openModal('img/cert3.jpg')">
+                <h3 class="text-lg font-bold text-white mt-3">Graphic Design Certification</h3>
+                <p class="text-gray-400 text-sm">Design Academy - 2021</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="modal" class="hidden fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center">
+        <div class="relative">
+            <img id="modal-img" class="max-w-full max-h-[80vh] rounded-lg">
+            <button onclick="closeModal()" class="absolute top-2 right-2 bg-[#FFD700] text-[#001F3F] px-3 py-1 font-bold rounded-full">X</button>
+        </div>
+    </div>
+
+    <!-- JavaScript for Modal -->
+    <script>
+        function openModal(imgSrc) {
+            document.getElementById('modal-img').src = imgSrc;
+            document.getElementById('modal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('modal').classList.add('hidden');
+        }
+    </script>
 
 </body>
 </html>
