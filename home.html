@@ -84,5 +84,182 @@
       <!-- <img src="img/gerella.png" alt="hero-img" class="w-full h-auto object-cover"> -->
     </div>
   </section>
+
+
+<!-- Navbar Section for About-->
+
+
+<!-- Header -->
+<header class="bg-[#FFD700] text-[#001F3F] py-5 text-center font-bold text-3xl">
+About Me
+</header>
+
+<!-- Hero Section -->
+<section class="py-12 px-6 max-w-5xl mx-auto text-center">
+    <img src="img/profile.jpg" alt="Profile Picture" class="w-30 h-20 rounded-full mx-auto shadow-lg">
+    <h1 class="text-3xl font-bold mt-4 text-[#FFD700]">Antoneth Gerella</h1>
+    <p class="text-lg text-gray-300 mt-2">Student | Future Web Developer | Designer </p>
+</section>
+
+  <!-- Bio Section -->
+  <section class="py-8 px-6 max-w-4xl mx-auto">
+      <h2 class="text-2xl font-semibold text-[#FFD700]">💡 Who Am I?</h2>
+      <p class="text-gray-300 mt-3">
+          Hello! I'm <strong>Antoneth</strong>, a passionate IT Student with a love for creating intuitive and engaging user experiences. With a strong background in both frontend and backend technologies, I aim to bring ideas to life through clean and efficient code.
+      </p>
+  </section>
+
+    <!-- Skills Section -->
+    <section class="py-8 px-6 max-w-4xl mx-auto">
+        <h2 class="text-2xl font-semibold text-[#FFD700]">⚡ Skills & Expertise</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 mt-4 text-center">
+            <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+                <p class="text-lg font-bold text-[#FFD700]">HTML</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+                <p class="text-lg font-bold text-[#FFD700]">CSS & Tailwind</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+                <p class="text-lg font-bold text-[#FFD700]">JavaScript</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+                <p class="text-lg font-bold text-[#FFD700]">Adobe Photoshop</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+                <p class="text-lg font-bold text-[#FFD700]">Figma</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+                <p class="text-lg font-bold text-[#FFD700]">Illustrator</p>
+            </div>
+        </div>
+    </section>
+
+      <!-- Call to Action -->
+      <section class="py-8 text-center">
+          <h2 class="text-xl font-bold text-[#FFD700]">Want to work together?</h2>
+          <p class="text-gray-300 mt-2">Let's create something amazing. Get in touch with me today!</p>
+          <a href="contact.html" class="mt-4 inline-block bg-[#FFD700] text-[#001F3F] font-bold py-2 px-6 rounded-lg hover:bg-[#FFC700] transition-all">
+              Contact Me
+          </a>
+      </section>
+
+
+
+       <!-- Header  for certificates-->
+    <header class="bg-[#FFD700] text-[#001F3F] py-5 text-center font-bold text-3xl">
+      My Certificates & Diplomas
+  </header>
+
+  <!-- Certificate Section -->
+  <section class="py-12 px-6 max-w-5xl mx-auto">
+      <h2 class="text-2xl font-semibold text-center text-[#FFD700]">📜 Achievements & Recognitions</h2>
+      <p class="text-center text-gray-300 mt-2">Here are some of my certifications and diplomas.</p>
+
+      <!-- Certificate Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
+          
+          <!-- Certificate 1 -->
+          <div class="bg-gray-800 rounded-lg p-4 shadow-lg">
+              <img src="img/VATP Cert.jpg" alt="Certificate 1" class="w-full rounded-md cursor-pointer hover:scale-105 transition-all" onclick="openModal('img/cert1.jpg')">
+              <h3 class="text-lg font-bold text-white mt-3">Certificate in Graphic Design</h3>
+              <p class="text-gray-400 text-sm">VATP  - 2023</p>
+          </div>
+
+          <!-- Certificate 2 -->
+          <div class="bg-gray-800 rounded-lg p-4 shadow-lg">
+              <img src="img/VATP Cert.jpg" alt="Certificate 2" class="w-full rounded-md cursor-pointer hover:scale-105 transition-all" onclick="openModal('img/cert2.jpg')">
+              <h3 class="text-lg font-bold text-white mt-3">Diploma in Computer Science</h3>
+              <p class="text-gray-400 text-sm">University of Marupok - 2022</p>
+          </div>
+
+          <!-- Certificate 3 -->
+          <div class="bg-gray-800 rounded-lg p-4 shadow-lg">
+              <img src="img/VATP Cert.jpg" alt="Certificate 3" class="w-full rounded-md cursor-pointer hover:scale-105 transition-all" onclick="openModal('img/cert3.jpg')">
+              <h3 class="text-lg font-bold text-white mt-3">Graphic Design Certification</h3>
+              <p class="text-gray-400 text-sm">Design Academy - 2021</p>
+          </div>
+
+      </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div id="modal" class="hidden fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center">
+      <div class="relative">
+          <img id="modal-img" class="max-w-full max-h-[80vh] rounded-lg">
+          <button onclick="closeModal()" class="absolute top-2 right-2 bg-[#FFD700] text-[#001F3F] px-3 py-1 font-bold rounded-full">X</button>
+      </div>
+  </div>
+
+  <!-- JavaScript for Modal -->
+  <script>
+      function openModal(imgSrc) {
+          document.getElementById('modal-img').src = imgSrc;
+          document.getElementById('modal').classList.remove('hidden');
+      }
+
+      function closeModal() {
+          document.getElementById('modal').classList.add('hidden');
+      }
+  </script>
+
+
+
+  <!-- Header for contact -->
+  <header class="bg-[#FFD700] text-[#001F3F] py-5 text-center font-bold text-3xl">
+    Get in Touch
+</header>
+
+<!-- Contact Section -->
+<section class="py-12 px-6 max-w-4xl mx-auto">
+    <h2 class="text-2xl font-semibold text-center text-[#FFD700]">📩 Contact Me</h2>
+    <p class="text-center text-gray-300 mt-2">Feel free to reach out for inquiries or collaborations!</p>
+
+    <!-- Contact Info -->
+    <div class="mt-8 space-y-6 text-center">
+        <p class="text-lg"><strong>Email:</strong> <a href="mailto:gerellaantoneth@gmail.com" class="text-[#FFD700] hover:underline">gerellaantoneth@gmail.com</a></p>
+        <p class="text-lg"><strong>Phone:</strong> <a href="tel:+639625323482" class="text-[#FFD700] hover:underline">+63 962 532 3482</a></p>
+    </div>
+
+    <!-- Social Media Links -->
+    <div class="flex justify-center space-x-6 mt-6">
+      <ul class="flex gap-4">
+        <li class="mr-2 flex justify-center items-center">
+          <a href="https://github.com/cyberPulse-error" target="_blank" class="w-[35px] h-[35px]">
+            <ion-icon name="logo-github" class="w-[35px] h-[35px] transition-all hover:text-[#FFD700]"></ion-icon>
+          </a>
+        </li>
+        <li class="mr-2 flex justify-center items-center">
+          <a href="https://www.instagram.com/gerellaantoneth/?hl=en" target="_blank" class="w-[35px] h-[35px]">
+            <ion-icon name="logo-instagram" class="w-[35px] h-[35px] transition-all hover:text-[#FFD700]"></ion-icon>
+          </a>
+        </li>
+        <li class="mr-2 flex justify-center items-center">
+          <a href="mailto: antonethgerella@gmail.com" target="_blank" class="w-[35px] h-[35px]">
+            <ion-icon name="mail" class="w-[35px] h-[35px] transition-all hover:text-[#FFD700]"></ion-icon>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Contact Form -->
+    <form class="bg-gray-800 p-6 mt-8 rounded-lg shadow-lg">
+        <h3 class="text-xl font-bold text-[#FFD700] mb-4">Send a Message</h3>
+        
+        <label class="block text-gray-300 mb-2">Your Name</label>
+        <input type="text" placeholder="Enter your name" class="w-full px-4 py-2 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-[#FFD700] mb-4">
+
+        <label class="block text-gray-300 mb-2">Your Email</label>
+        <input type="email" placeholder="Enter your email" class="w-full px-4 py-2 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-[#FFD700] mb-4">
+
+        <label class="block text-gray-300 mb-2">Your Message</label>
+        <textarea placeholder="Type your message..." class="w-full px-4 py-2 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-[#FFD700] mb-4" rows="4"></textarea>
+
+        <button type="submit" class="w-full bg-[#FFD700] text-[#001F3F] font-bold py-2 rounded hover:bg-[#FFC700] transition-all">
+            Send Message
+        </button>
+    </form>
+
+</section>
+
 </body>
 </html>
